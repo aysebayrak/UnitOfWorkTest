@@ -1,0 +1,87 @@
+﻿@model UI.Dtos.CreateNewUserDto
+@{
+    Layout = null;
+}
+<div class="sign-in">
+        <h1>yeni kullanıcı kaydı</h1>
+        <form
+             asp-action=""
+              autocomplete="off"
+              class="registration-form"
+              id="register-form"
+              method="post"
+              novalidate="novalidate">
+            <input name="__RequestVerificationToken"
+                   type="hidden"
+                   value="Z3G6bggoAzUTZuVTnTCIFg6y8N-RQvi0xhqSIe6X3JVLCXwQ4wqLweEK-9kYAOAOS5k3VBuzbO_1Ht_WZ_cK16-bbt8ChoAhe8hAxpeXWtI1" />
+            <input id="nickControlEndpointUrl"
+                   type="hidden"
+                   value="/registration/canregisternick" />
+            <fieldset class="verticall-kayit">
+                  <div>
+                    <label for="Name">Ad</label><br />
+                   <input type="text" class="form-control" id="f-name" asp-for="Name" placeholder="Ad">
+                <span asp-validation-for="Name" class="text-danger "></span>
+                </div>
+                <div>
+                <div>
+                    <label for="Surname">SoyAd</label><br />
+                    <input type="text" class="form-control" id="f-name" asp-for="Surname" placeholder="SoyAdı">
+                    <span asp-validation-for="Surname" class="text-danger "></span>
+                </div>
+                <div>
+                <div>
+                    <label for="UsurName">Kullanıcı Adı</label><br />
+                   <input type="text" class="form-control" id="f-name" asp-for="Username" placeholder="Nick">
+                        <span asp-validation-for="Username" class="text-danger "></span>
+                </div>
+                <div>
+               
+              
+                    <label for="Email">e-mail</label><br />
+                <input type="email" class="form-control" asp-for="Mail" id="email-address" placeholder="Email Adresiniz">
+                <span asp-validation-for="Mail" class="text-danger "></span>
+                </div>
+              
+                <div style="margin-top: 30px">
+                    <div class="row">
+                        <div style="float: left; width: 30px; padding-top: 5px">
+                            <p>
+                                <i class="fa-regular fa-circle-exclamation"></i>
+                            </p>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="Password">şifre</label>
+                    </div>
+                    <div class="col-input">
+                        <div id="pw-strength-meter">
+                            <span class="meter-indicator"></span>
+                        </div>
+                    <input type="password" class="form-control" id="password-s" asp-for="Password" placeholder="Şifreniz">
+                    <span asp-validation-for="Password" class="text-danger "></span>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="PasswordConfirm">şifre (tekrar)</label>
+                    </div>
+                    <div class="col-input">
+                    <input type="password" class="form-control" id="password-s" asp-for="ConfirmPassword" placeholder="Şifeyi Tekrar Giriniz">
+                    <span asp-validation-for="ConfirmPassword" class="text-danger "></span>
+                        
+                    </div>
+                </div>
+                <div class="actions">
+                <button type="submit" class="btn btn-primary btn-lg btn-block w-100">
+                        kayıt ol
+                    </button>  
+                    </div>
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            </fieldset>
+        </form>
+    </div>

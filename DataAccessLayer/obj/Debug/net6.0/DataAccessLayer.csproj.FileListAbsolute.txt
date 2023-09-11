@@ -1,0 +1,17 @@
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\projeler_ab\UnitOfWorkTestCase\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

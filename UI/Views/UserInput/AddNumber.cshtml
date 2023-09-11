@@ -1,0 +1,19 @@
+﻿@model ApiLayer.Model.NumberInputModel
+@{
+    Layout = null;
+}
+
+<h1>En Büyük Asal Sayıyı Bul</h1>
+
+<form asp-controller="UserInput" asp-action="AddNumber" method="post">
+    <div class="form-group">
+        <label for="numbers">Sayıları girin (virgülle ayırın):</label>
+        <input type="text" id="numbers" name="numbers" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Hesapla</button>
+</form>
+
+@if (!string.IsNullOrWhiteSpace(ViewBag.ErrorMessage))
+{
+    <p class="text-danger">@ViewBag.ErrorMessage</p>
+}

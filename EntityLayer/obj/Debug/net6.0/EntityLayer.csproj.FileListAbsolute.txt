@@ -1,0 +1,12 @@
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\projeler_ab\UnitOfWorkTestCase\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

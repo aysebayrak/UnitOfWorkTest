@@ -1,0 +1,41 @@
+﻿@model UI.Dtos.LoginUserDto
+@{
+    Layout = null;
+}
+
+
+<div class="form-container" id="login-form-container">
+    <h1>giriş</h1>
+
+    <form asp-action="Index" method="post" novalidate="novalidate">
+        <input name="__RequestVerificationToken"
+               type="hidden"
+               value="AHibX_CDQt6vf9xhnwLq6t7lzhpnk_Fqh5oLJ6WI9GOM2LCMMWqgWEsZlYwaNdG6OoNw4Ipv4LPwfGROqb5zCGfls14fFfFrUIV35eu5hyg1" />
+        <fieldset class="verticall">
+            <input id="ReturnUrl"
+                   name="ReturnUrl"
+                   type="hidden"
+                  
+            <span class="field-validation-valid"
+                  data-valmsg-for="Status"
+                  data-valmsg-replace="true"></span>
+           
+            <div>
+                <label for="UsurName">Kullanıcı Adı </label><br />
+                <input type="text" id="username" class="form-control" asp-for="Username" placeholder="Kullanıcı Adı" required>
+                <span asp-validation-for="Username" class="text-danger "></span>
+            </div>
+            <div>
+                <label for="Password">şifre</label><br />
+                <input type="password" id="loginPassword" class="form-control" asp-for="Password" placeholder="Şifre" required>
+                <span asp-validation-for="Password" class="text-danger "></span>
+            </div>
+            
+            <div class="actions">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">
+                    giriş
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</div>

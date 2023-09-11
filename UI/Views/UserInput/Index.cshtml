@@ -1,0 +1,29 @@
+﻿@model List<ApiLayer.Model.NumberInputModel>
+@{
+    Layout = null;
+    int count = 0;
+}
+<h1>Sonuçlar</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Sayılar</th>
+        <th>En Büyük Asal Sayı</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.CombinedNumbers</td>
+            <td>@item.LargestPrimeNumber</td>
+        </tr>
+    }
+
+</table>
+
+
+
+
+<a asp-controller="UserInput" asp-action="AddNumber">Yeniden Hesapla</a>
