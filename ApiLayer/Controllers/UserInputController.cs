@@ -25,14 +25,14 @@ namespace ApiLayer.Controllers
             _context = context;
         }
 
+    
+
+        [IgnoreAntiforgeryToken]
         [HttpPost("addNumbers")]
-        public ActionResult AddNumbers( NumberInputModel model)
+        public ActionResult AddNumbers([FromBody] List<int> model)
         {
-            if (model == null || model.Numbers == null || model.Numbers.Count == 0)
-            {
-                return BadRequest("Geçerli veri girişi sağla.");
-            }
-            List<int> numbers = model.Numbers;
+          
+            var numbers = model;
             string combinedNumbers = string.Join(" ", numbers);
 
             int largestPrime = _userInputService.FindLargestPrimeNumber(numbers);
@@ -43,12 +43,11 @@ namespace ApiLayer.Controllers
                 LargestPrimeNumber = largestPrime
             };
 
-                 _context.UserInputs.Add(num);
-                _uowDal.Save();
+            _context.UserInputs.Add(num);
+            _uowDal.Save();
 
-                return Ok(largestPrime);
+            return Ok(largestPrime);
         }
-
 
         [HttpGet]
        

@@ -21,13 +21,10 @@ namespace UI.Controllers
             _httpClientFactory= httpClientFactory;
         }
 
-    
-    
         public IActionResult AddNumber()
         {
             return View();
         }
-
 
         [HttpPost]
         public async Task<IActionResult> AddNumber(string numbers)
@@ -41,20 +38,13 @@ namespace UI.Controllers
 
                 List<int> numberList = numbers.Split(',').Select(int.Parse).ToList();
 
-             
-                var model = new NumberInputModel
-                {
-                    Numbers = numberList
-                };
+                var client = new HttpClient();
+                var responseMessage = await client.PostAsJsonAsync<List<int>>("https://localhost:7024/api/UserInput/addNumbers", numberList);
 
-                var client = _httpClientFactory.CreateClient();
-                var jsonData = JsonConvert.SerializeObject(model);
-                StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-                var responseMessage = await client.PostAsync("https://localhost:7024/api/UserInput/addNumbers", stringContent);
 
                 if (responseMessage.IsSuccessStatusCode)
                 {
-                    return RedirectToAction("Index");
+                    return RedirectToAction("AddNumber");
                 }
                 else
                 {
